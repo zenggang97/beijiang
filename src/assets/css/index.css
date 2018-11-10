@@ -1,0 +1,174 @@
+/* 采取Acss写法 */
+
+/* flex布局 */
+.flex {
+    display: flex !important;
+    flex-wrap: wrap;
+}
+.flex_align_center {
+    display: flex !important;
+    /* 垂直居中 */
+    align-items:center;
+}
+.justify_center {
+    display: flex !important;
+    /* 水平居中 */
+    justify-content:center;
+}
+.justify_around {
+    display: flex !important;
+    /* 项目两侧的间隔相等 */
+    justify-content: space-around;
+}
+.justify_between {
+    display: flex !important;
+    /* 两端对齐，项目之间的间隔都相等 */
+    justify-content: space-between;
+}
+
+
+/* 组件模块标题样式 */
+.rectangle {
+    padding:.5rem 0 .36rem .5rem;
+    font-size: 1.28rem;
+}
+.rectangle::before {
+    content: '';
+    display:block;
+    float: left;
+    width: 6px;
+    height: 26px;
+    margin-right: 6px;
+    background:rgba(255,255,255,1);
+}
+
+/* 颜色 */
+.color_1 {
+    font-size:3.0rem;
+    font-family:Bahnschrift;
+    color:rgba(255,16,110,1);
+}
+.color_11 {
+    color:rgba(255,16,110,1);
+}
+.color_2 {
+    font-size:2.0rem;
+    font-family:Bahnschrift;
+    color:rgba(255,255,255,1);;
+}
+.color_3 {
+    color:rgba(114,128,169,1);
+}
+
+/* 船舶监控列表数据 */
+.Monitor_li {
+    width: 50%;
+    height: 90px;
+}
+.Monitor_icon {
+    width: 60px;
+    height: 60px;
+    background-color: #4466f433;
+    border-radius: 30px;
+}
+.Monitor_icon>div {
+    width: 100%;
+    height: 100%;
+}
+
+/* 宽高 */
+.marging_10 {
+    margin-left: 10px;
+}
+.relative {
+    position: relative;
+}
+
+.width_6 {
+    width: calc(60% - 0px);
+}
+.height_380_left {
+    width: 60%;
+}
+.height_380_right {
+    width: 40%;
+}
+.width_4 {
+    width: calc(40% - 0px);
+}
+
+
+/* 地图覆盖样式 */
+.topSee {
+    z-index: 99;
+    position: relative;     
+}
+.fugai {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-image: linear-gradient(to right, #07071600 0%, #09091859 40%, #090918 100%);
+}
+
+/* 背景图标 */
+.icon_box {
+    background: url(../images/box.png) no-repeat center;
+}
+.icon_cargo {
+    background: url(../images/cargo.png) no-repeat center;
+}
+.icon_container {
+    background: url(../images/container.png) no-repeat center;
+}
+.icon_danger {
+    background: url(../images/danger.png) no-repeat center;
+}
+.icon_other {
+    background: url(../images/other.png) no-repeat center;
+}
+.icon_person {
+    background: url(../images/person.png) no-repeat center;
+}
+
+
+@media screen and (min-height:1080px){
+    .wrapper {
+        height: 1080px;
+    }
+    .height_740 {
+        height: 790px;
+        margin-top: -90px;
+    }
+    .height_380 {
+        height: 380px;
+    }
+    .height_360 {
+        height: 360px;
+    }
+    .height_340 {
+        height: 340px;
+    }
+}
+
+@media screen and (min-height:1200px){
+    .wrapper {
+        height: 1200px;
+    }
+    .height_740 {
+        height: 900px;
+        margin-top: -120px;
+    }
+    .height_380 {
+        height: 420px;
+    }
+    .height_360 {
+        height: 400px;
+    }
+    .height_340 {
+        height: 380px;
+    }
+}
+
+
