@@ -17,3 +17,8 @@ body {
 p {
     display: block;
 }
+
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url('../bahnschrift.ttf');
+}
