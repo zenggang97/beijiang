@@ -170,5 +170,8 @@
         height: 380px;
     }
 }
+@media screen and (max-width:800px){
+    body {display:none;}
+}
 
 
